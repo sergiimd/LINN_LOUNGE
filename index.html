@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link href="img/LEGO_logo.svg.png" rel="icon" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Lynn Lounge</title>
+        <link rel="stylesheet" href="https://use.typekit.net/qhm8wqj.css" />
+      
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+      
+       <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/lightbox.css">
+
+        <!-- AOS CSS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">     
+
+        <!-- JQUERY -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- SCROLL REVEAL JS -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- TYPED JS -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        
+        <!-- Tipografía 1 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!-- Tipografía 2 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800&display=swap" rel="stylesheet">
+            
+    </head>
+    <body>
+
+  <!--HEADER-->
+  <header class="navbar">
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="shipping-info">
+            Descubre Lynn Lounge
+        </div>
+    </div>
+
+    <!-- Main Bar -->
+    <div class="main-bar">
+        <div class="logo">
+            <a href="index.html">
+                <img id="logolego" src="img/logo_navidad.jpg">
+              </a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Enter your product name...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-heart"></i><span class="badge">0</span></a>
+            <a href="#"><i class="fas fa-shopping-bag"></i><span class="badge">0</span></a>
+        </div>
+    </div>
+
+   <!-- Menú hamburguesa -->
+<div class="hamburger-menu" id="hamburger-menu">
+    <i class="fas fa-bars"></i>
+</div>
+
+<!-- Categorías -->
+<nav class="nav-menu" id="nav-menu">
+    <a href="index.html">INICIO</a>
+    <a href="gallery.html">CARTA</a>
+    <a href="#products">RESERVAS</a>
+    <a href="#destacados">GALERÍA</a>
+    <a href="#tematicas">BLOG</a>
+</nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- SVG ICONS -->
+        <svg class="d-none" xmlns="http://www.w3.org/2000/svg"></svg>
+            <symbol id="enlarge" viewBox="0 0 16 16">
+                <path d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z"/>
+            </symbol>
+            <symbol id="exit" viewBox="0 0 16 16">
+                <path d="M5.5 0a.5.5 0 0 1 .5.5v4A1.5 1.5 0 0 1 4.5 6h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5zm5 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 10 4.5v-4a.5.5 0 0 1 .5-.5zM0 10.5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 6 11.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zm10 1a1.5 1.5 0 0 1 1.5-1.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4z"/>
+            </symbol>
+        </svg>
+
+<!-- FOOTER CON ENLACE A REDES SOCIALES -->   
+        <footer class="footer">
+            <div class="footer-left col-md-4 col-sm-6">
+              <p class="about">
+                <span> Quiénes somos</span> Descubre Lynn Lounge, un espacio vibrante que combina un ambiente acogedor con una selección exquisita de cócteles. Relájate en su terraza, un jardín al aire libre que ofrece vistas impresionantes. Además, Lynn Lounge es el lugar ideal para disfrutar de música en vivo y un servicio excepcional, todo en un diseño moderno y sofisticado.
+              </p>
+              <div class="icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a> 
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="footer-center col-md-4 col-sm-6">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span> Lynn Lounge&copy; </span> C/San Mateo, 22 
+                    28020, Madrid 
+                    Spain</p>
+              </div>
+              <div>
+                <i class="fa fa-phone"></i>
+                <p> De lunes a viernes 9:00 - 17:00 <br>900 958 014 </p>
+              </div>
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#"> LynnLounge@contacto.com</a></p>
+              </div>
+            </div>
+            <div class="footer-right col-md-4 col-sm-6">
+              <h2>  Lynn<span> Lounge</span></h2>
+              <p class="menu">
+                <a href="#"> INICIO</a> |
+                <a href="#"> CARTA</a> |
+                <a href="#"> RESERVAS</a> |
+                <a href="#"> GALERÍA</a> |  
+                <a href="#"> BLOG</a> |   
+              </p>
+              <p class="name"> &copy;2024 Lynn Lounge.</p>
+            </div>
+          </footer>
+
+        <!-- JAVASCRIPT BOOTSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- JAVASCRIPT -->
+         <script src="js/script.js"></script>
+
+         <!-- JAVASCRIPT AOS -->
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </body>
+</html>

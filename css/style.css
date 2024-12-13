@@ -1,0 +1,449 @@
+
+:root {
+
+  /*-----------------------------------*\
+    #COLORES
+  \*-----------------------------------*/
+  --GRIS: #0c0c0c;
+  --BLANCO: #ffffff;
+  --AMARILLO: #FFD700;
+  --ROJO: #FF3D00;
+
+  /*-----------------------------------*\
+    #TIPOGRAFÍAS
+  \*-----------------------------------*/
+
+background-color: #0c0c0c;
+
+  /* Tipografía 1  */
+
+  .roboto-thin {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+
+  /* Tipografía 2  */
+  .m-plus-rounded-1c-regular {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .m-plus-rounded-1c-extrabold {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  }
+  
+/*-----------------------------------*\
+#HEADER
+\*-----------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  }
+  
+  body {
+  font-family: "Roboto", sans-serif;
+  }
+  
+  .navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  border-bottom: 1px solid #ddd;
+  }
+  
+  .top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(46, 46, 46);
+  border-bottom: 1px solid #ddd;
+  }
+  
+  .social-icons{
+  display: flex;
+  }
+  
+  .social-icons a {
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  }
+  
+  .shipping-info {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center; 
+  width: 100%;
+  z-index: 1;
+  }
+      
+  .main-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+    }
+  
+/*-----------------------------------*\
+  #LOGO NAVIDEÑO
+\*-----------------------------------*/
+.logo img {
+  width: 90px;
+  height: auto;
+}
+  
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin-right: 20px;
+}
+  
+.search-bar input {
+    padding: 8px 15px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 20px 0 0 20px;
+}
+  
+.search-bar button {
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+/*-----------------------------------*\
+#Iconos en la barra principal
+\*-----------------------------------*/
+.icons a {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #333;
+    position: relative;
+    text-decoration: none;
+}
+  
+.icons a .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #FF3D00;
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 2px 5px;
+}
+
+/*-----------------------------------*\
+#Menú de navegación
+\*-----------------------------------*/
+.nav-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: none;
+}
+
+.nav-menu a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+  
+.nav-menu a:hover {
+    color:  #FF3D00;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+  
+.hamburger-menu i {
+    font-size: 24px;
+    color: #333;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .nav-menu a {
+        margin: 10px 0;
+        font-size: 16px;
+        padding: 10px 20px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .hamburger-menu {
+        display: block; 
+    }
+}
+
+.nav-menu.active {
+    display: flex;
+}
+  
+  
+
+/*-----------------------------------*\
+#FOOTER
+\*-----------------------------------*/
+.footer {
+  background-color: rgb(46, 46, 46);
+  width: 100%;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 50px;
+  margin-top: 50px;
+  }
+  
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+  }
+  
+  /* footer izq*/
+  .footer .footer-left {
+  width: 33%;
+  padding-right: 15px;
+  }
+  
+  .footer .about {
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+  }
+  
+  .footer .about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  }
+  
+  .footer .icons {
+  margin-top: 25px;
+  }
+  
+  .footer .icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #333333;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  }
+  
+  /* footer medio*/
+  .footer .footer-center {
+  width: 30%;
+  }
+  
+  .footer .footer-center i {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+  }
+  
+  .footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+  }
+  
+  .footer .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+  font-weight: 400;
+  }
+  
+  .footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+  }
+  
+  .footer .footer-center p a {
+  color:  #FF3D00;
+  text-decoration: none;
+  }
+  
+  /* footer drch*/
+  .footer .footer-right {
+  width: 35%;
+  }
+  
+  .footer h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+  }
+  
+  .footer h2 span {
+  color:  #FF3D00;
+  }
+  
+  .footer .menu {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+  font-weight: 400;
+  }
+  
+  .footer .menu a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  }
+  
+  .footer .menu a:hover {
+  color:  #FF3D00;
+  }
+  
+  .footer .name {
+  color:  #FF3D00;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  }
+    
+    @media (max-width: 767px) {
+      .footer {
+        font-size: 14px;
+      }
+      .footer .footer-left,
+      .footer .footer-center,
+      .footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      .footer .footer-center i {
+        margin-left: 0;
+      }
+    }
