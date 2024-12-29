@@ -4,87 +4,87 @@
   /*-----------------------------------*\
     #COLORES
   \*-----------------------------------*/
-  --GRIS: #0c0c0c;
+  --GRIS: #000000;
   --BLANCO: #ffffff;
-  --AMARILLO: #FFD700;
-  --ROJO: #FF3D00;
+  --ROJO1: #cc0000;
+  --ROJO2: #620000;
 
   /*-----------------------------------*\
     #TIPOGRAFÍAS
   \*-----------------------------------*/
 
-background-color: #0c0c0c;
+background-color: #000000;
 
   /* Tipografía 1  */
 
-  .roboto-thin {
-      font-family: "Roboto", sans-serif;
+  .montserrat-thin {
+      font-family: "Montserrat", sans-serif;
       font-weight: 100;
       font-style: normal;
   }
   
-  .roboto-light {
-    font-family: "Roboto", sans-serif;
+  .montserrat-light {
+    font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-style: normal;
   }
   
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
+  .montserrat-regular {
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
   
-  .roboto-medium {
-    font-family: "Roboto", sans-serif;
+  .montserrat-medium {
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-style: normal;
   }
   
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
+  .montserrat-bold {
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-style: normal;
   }
   
-  .roboto-black {
-    font-family: "Roboto", sans-serif;
+  .montserrat-black {
+    font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-style: normal;
   }
   
-  .roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
+  .montserrat-thin-italic {
+    font-family: "Montserrat", sans-serif;
     font-weight: 100;
     font-style: italic;
   }
   
-  .roboto-light-italic {
-    font-family: "Roboto", sans-serif;
+  .montserrat-light-italic {
+    font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-style: italic;
   }
   
-  .roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
+  .montserrat-regular-italic {
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: italic;
   }
   
-  .roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
+  .montserrat-medium-italic {
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-style: italic;
   }
   
-  .roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
+  .montserrat-bold-italic {
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-style: italic;
   }
   
-  .roboto-black-italic {
-    font-family: "Roboto", sans-serif;
+  .montserrat-black-italic {
+    font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-style: italic;
   }
@@ -111,18 +111,18 @@ background-color: #0c0c0c;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   }
   
   body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   }
   
   .navbar {
   width: 100%;
   display: flex;
   flex-direction: column; 
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #000000;
   }
   
   .top-bar {
@@ -131,7 +131,7 @@ background-color: #0c0c0c;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgb(46, 46, 46);
+  background-color: rgb(0, 0, 0);
   border-bottom: 1px solid #ddd;
   }
   
@@ -165,132 +165,197 @@ background-color: #0c0c0c;
         border-bottom: 1px solid #ddd;
     }
   
-/*-----------------------------------*\
-  #LOGO NAVIDEÑO
-\*-----------------------------------*/
-.logo img {
-  width: 90px;
-  height: auto;
-}
-  
-.search-bar {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    margin-right: 20px;
-}
-  
-.search-bar input {
-    padding: 8px 15px;
-    width: 300px;
-    border: 1px solid #ddd;
-    border-radius: 20px 0 0 20px;
-}
-  
-.search-bar button {
-    padding: 8px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 0 20px 20px 0;
-    cursor: pointer;
-}
-
-/*-----------------------------------*\
-#Iconos en la barra principal
-\*-----------------------------------*/
-.icons a {
-    margin-left: 20px;
-    font-size: 18px;
-    color: #333;
-    position: relative;
-    text-decoration: none;
-}
-  
-.icons a .badge {
-    position: absolute;
-    top: -5px;
-    right: -10px;
-    background-color: #FF3D00;
-    color: white;
-    border-radius: 50%;
-    font-size: 10px;
-    padding: 2px 5px;
-}
 
 /*-----------------------------------*\
 #Menú de navegación
 \*-----------------------------------*/
-.nav-menu {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    background-color: none;
+
+.my-navbar-color {
+	background-color:rgb(0, 0, 0);
+ }
+ 
+ .nav-link {
+	color:#ffffff;
+ }
+ 
+ .navbar-brand {
+	 color:#ffffff;
+ }
+ 
+ .btn-group {
+	 margin: 2rem 0;
+	 display: block !important;
+ }
+ 
+ 
+ .btn {
+	 padding: 1rem 2rem;
+	 text-decoration: none;
+	 text-transform: uppercase;
+	 border-radius: 5px;
+	 position: relative;
+	 display: inline-block !important;
+	 line-height: 1;
+ }
+ 
+ .btn + .btn {
+	 margin-left: 1rem;
+ }
+ 
+ .btn-secondary {
+	 background: var(--foreground);
+	 color: var(--background);
+ }
+ 
+ .btn-accent {
+	 background: var(--clr-accent);
+	 color: var(--foreground);
+ }
+ 
+ .btn::after {
+	 content: "";
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 border: var(--foreground) 2px solid;
+	 left: 0;
+	 top: 0;
+	 border-radius: inherit;
+	 z-index: -1;
+ }
+ 
+
+.reserva-bg {
+    background-color: #ffffff !important;
+    font-family: "Anton", sans-serif;
+   
+}
+/*-----------------------------------*\
+#FRASE SEPARADOR
+\*-----------------------------------*/
+.frase-separador {
+  text-align: center;
+  font-size: 4rem; /* Tamaño grande */
+  text-transform: uppercase; /* Para convertir a mayúsculas */
+  line-height: 146%; /* Line height de 146 */
+  height: 100vh; /* Para que ocupe toda la altura de la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*-----------------------------------*\
+#DOBLE FOTO
+\*-----------------------------------*/
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.nav-menu a {
-    margin: 0 15px;
-    color: #333;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-}
-  
-.nav-menu a:hover {
-    color:  #FF3D00;
+.image-container img {
+  width: 100%;
+  height: auto;
 }
 
-.hamburger-menu {
-    display: none;
-    cursor: pointer;
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto para mejor visibilidad */
 }
-  
-.hamburger-menu i {
-    font-size: 24px;
-    color: #333;
-    padding: 10px;
-}
-
-@media (max-width: 768px) {
-    .nav-menu {
-        display: none; 
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        padding: 20px;
-        z-index: 1000;
-    }
-
-    .nav-menu a {
-        margin: 10px 0;
-        font-size: 16px;
-        padding: 10px 20px;
-        text-align: center;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .hamburger-menu {
-        display: block; 
-    }
+/*-----------------------------------*\
+#EVENTOS
+\*-----------------------------------*/
+.image-container {
+  position: relative;
+  width: 100%;
 }
 
-.nav-menu.active {
-    display: flex;
+.image-container img {
+  width: 50%; /* Cada imagen ocupa la mitad del contenedor */
+  height: auto;
+  float: left; /* Para que se alineen una al lado de la otra sin espacio */
 }
-  
-  
 
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto para mejor visibilidad */
+}
+/*-----------------------------------*\
+#CARROUSEL
+\*-----------------------------------*/
+/*-----------------------------------*\
+#BARRA CON TEXTO
+\*-----------------------------------*/
+.containerWrapper {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.first-word {
+  animation-delay: 1s;
+}
+
+.last-word {
+  animation-delay: 3s;
+}
+/*-----------------------------------*\
+#VIDEO2
+\*-----------------------------------*/
+.event-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh; /* Ajusta la altura a la pantalla */
+  padding: 20px;
+}
+
+.event-text {
+  max-width: 50%; /* Para que el texto no se estire demasiado */
+}
+
+.event-image img {
+  width: 100%;
+  height: auto;
+}
 /*-----------------------------------*\
 #FOOTER
 \*-----------------------------------*/
 .footer {
-  background-color: rgb(46, 46, 46);
+  background-color: rgb(0, 0, 0);
   width: 100%;
   text-align: left;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 16px;
   padding: 50px;
@@ -323,7 +388,7 @@ background-color: #0c0c0c;
   color: #ffffff;
   font-size: 14px;
   margin-bottom: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-style: normal;
   }
@@ -421,11 +486,11 @@ background-color: #0c0c0c;
   }
   
   .footer .menu a:hover {
-  color:  #FF3D00;
+  color:  #cc0000;
   }
   
   .footer .name {
-  color:  #FF3D00;
+  color:  #cc0000;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
