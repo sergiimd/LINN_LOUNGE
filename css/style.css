@@ -112,8 +112,9 @@ background-color: #000000;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  background-color: rgb(14, 14, 14);
   }
-  
+
   body {
   font-family: "Montserrat", sans-serif;
   }

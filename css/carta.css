@@ -13,7 +13,7 @@
     #TIPOGRAFÍAS
   \*-----------------------------------*/
 
-background-color: #000000;
+  background-color: rgb(21, 21, 21);
 
   /* Tipografía 1  */
 
@@ -104,6 +104,11 @@ background-color: #000000;
   }
   }
   
+
+h2{
+  font-family: "Montserrat", serif;
+  font-weight: 900;
+}
 /*-----------------------------------*\
 #HEADER
 \*-----------------------------------*/
@@ -116,6 +121,7 @@ background-color: #000000;
   
   body {
   font-family: "Montserrat", sans-serif;
+  background-color: rgb(14, 14, 14);
   }
   
   .navbar {
@@ -229,6 +235,220 @@ background-color: #000000;
     font-family: "Anton", sans-serif;
    
 }
+
+
+
+.cosmopolitan {
+  height: 100vh;
+  color:white;
+  font-size: 3em;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} 
+
+#descripcion {
+  width: 100%;
+}
+
+
+.border-container {
+  width: 100%;
+  max-width: 100%; 
+  border-left: 3px solid #fff; 
+  border-right: 3px solid #fff; 
+  padding: 20px; 
+  box-sizing: border-box;
+}
+
+.text-white {
+  color: white;
+  max-width: 80%; 
+  text-align: center; 
+}
+
+.fs-6 {
+  font-size: 1rem; 
+}
+
+.fs-md-3 {
+  font-size: 1.25rem; 
+}
+
+.compra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: rgb(21, 21, 21); 
+  color: #fff; 
+  border: 2px solid #fff; 
+  padding: 10px 20px; 
+  font-size: 1rem; 
+  text-transform: uppercase; 
+  transition: all 0.3s ease; 
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn:hover {
+  background-color: #fff; 
+  color: #000; 
+  border: 1px solid #000; 
+}
+
+.zoom-img {
+  transition: transform 0.3s ease-in-out; 
+  object-fit: cover; 
+  width: 100%; 
+}
+
+/* Efecto al hacer hover */
+.zoom-img:hover {
+  transform: scale(1.1); 
+}
+
+/*CARDS */
+.container-fluid {
+  width:100%;
+}
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border: none; 
+}
+
+.card-img-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center; 
+  border-radius: none;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*TEXTO MOTIVADOR */
+.text-motivador {
+  color:#ffffff;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  font-size: 3em;
+  PADDING: 3em;
+}
+.FRASE1 {
+  font-size: 2.5em;
+}
+.FRASE2{
+  font-size: 3.75em;
+}
+.FRASE3{
+  font-size: 2em;
+}
+
+.bg-light{
+  background-color: rgb(21, 21, 21)!important;;
+  
+}
+
+/*TEXTO ANIMADO */
+.running-line-wrapper {
+  margin: 4em;
+  overflow: hidden;
+  padding: 40px 0; 
+}
+
+
+.running-line {
+  font-size: 80px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap; 
+  animation: run 15s linear infinite; 
+  font-weight: bold;
+}
+
+
+@keyframes run {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+/* BIOGRAFÍA */
+.bio-bg {
+  position: relative;
+  height: 80vh; 
+}
+
+.bio-bg h2 {
+  top: 40%; 
+  left: 50%; 
+  transform: translate(-50%, 10%); 
+  color: #ffffff;
+  font-size: 7rem; 
+  z-index: 10;
+}
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgba;
+  }
+
+p {
+ margin-top: 4em;
+}
+
+.responsive-heading {
+  font-size: 2rem; 
+}
+
+.container-fluid {
+  position: relative;
+}
+
+.col-12.col-md-6.bg-light {
+  position: relative;
+}
+
+#marquee-section {
+  background-color: #000000; 
+  overflow: hidden;
+  position: relative;
+  height: 100px; 
+  color: white;
+}
+
+.marquee {
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-text {
+  display: inline-block;
+  padding-left: 100%; 
+}
+
+@keyframes marquee {
+  from {
+      transform: translate(0, 0);
+  }
+  to {
+      transform: translate(-100%, 0);
+  }
+}
+
+
 
 
 /*-----------------------------------*\
