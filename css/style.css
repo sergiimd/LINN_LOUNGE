@@ -298,37 +298,31 @@ background-color: #000000;
 /*-----------------------------------*\
 #BARRA CON TEXTO
 \*-----------------------------------*/
-.containerWrapper {
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(0, 0, 0);
-  text-align: center;
+.running-line-wrapper {
+  margin: 4em;
+  overflow: hidden;
+  padding: 40px 0; 
 }
 
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 1s forwards;
+
+.running-line {
+  font-size: 80px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap; 
+  animation: run 15s linear infinite; 
+  font-weight: bold;
 }
 
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-      transform: translateY(20px);
+
+@keyframes run {
+  0% {
+    transform: translateX(0); 
   }
-  to {
-      opacity: 1;
-      transform: translateY(0);
+  100% {
+    transform: translateX(-100%); 
   }
-}
-
-.first-word {
-  animation-delay: 1s;
-}
-
-.last-word {
-  animation-delay: 3s;
 }
 /*-----------------------------------*\
 #VIDEO2
