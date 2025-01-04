@@ -9,6 +9,24 @@ document.addEventListener("DOMContentLoaded", () => {
         AOS.init();
 
 
+
+
+// ILUSTRACIÓN COPA CAMBIO IMAGEN
+var copa = $("#coctel-img");
+
+copa.hover(
+    function() {
+    $(this).attr("src", "img/HOME/coctel2.png");
+    },
+    function() {
+        $(this).attr("src", "img/HOME/coctel1.png");
+    }
+);
+
+
+
+
+        
     // --- Create LightBox
     const galleryGrid = document.querySelector(".gallery-grid");
     const links = galleryGrid.querySelectorAll("a");
@@ -170,3 +188,5 @@ signInButton.addEventListener('click', () => {
     signInContainer.style.display = 'flex';
     signUpContainer.style.display = 'none';
 });
+
+
