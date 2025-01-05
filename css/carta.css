@@ -16,7 +16,6 @@
   background-color: rgb(21, 21, 21);
 
   /* Tipografía 1  */
-
   .montserrat-thin {
       font-family: "Montserrat", sans-serif;
       font-weight: 100;
@@ -108,11 +107,8 @@
   font-weight: 900;
   font-style: normal;
 }
-
-
-  }
-  
-
+}
+ 
 h2{
   font-family: "Montserrat", serif;
   font-weight: 900;
@@ -183,15 +179,11 @@ h2{
 /*-----------------------------------*\
 #LOGO BLANCO
 \*-----------------------------------*/
-
-
 #logoblanco {
   width: 125px;
   height: auto;
   margin-left: 20px;
 }
-
-
 
 
 /*-----------------------------------*\
@@ -213,7 +205,6 @@ h2{
 	 margin: 2rem 0;
 	 display: block !important;
  }
- 
  
  .btn {
 	 padding: 1rem 2rem;
@@ -251,14 +242,11 @@ h2{
 	 z-index: -1;
  }
  
-
 .reserva-bg {
     background-color: #ffffff !important;
     font-family: "Anton", sans-serif;
    
 }
-
-
 
 .cosmopolitan {
   height: 100vh;
@@ -387,7 +375,6 @@ h2{
   padding: 40px 0; 
 }
 
-
 .running-line {
   font-size: 80px;
   font-family: "Montserrat", sans-serif;
@@ -397,7 +384,6 @@ h2{
   animation: run 15s linear infinite; 
   font-weight: bold;
 }
-
 
 @keyframes run {
   0% {
@@ -469,8 +455,6 @@ p {
       transform: translate(-100%, 0);
   }
 }
-
-
 
 
 /*-----------------------------------*\
