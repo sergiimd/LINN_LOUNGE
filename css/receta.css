@@ -229,15 +229,10 @@
   /*-----------------------------------*\
   #CARTA
   \*-----------------------------------*/
-
-
-  #bebidas {
-    padding-top: 50%;
-  }
-  .card-body{
+  .bebidas-container {
     padding: 2em;
-  }
-
+    margin-top: 80px; /* Asegura que haya espacio suficiente para que no se solape con el navbar */
+}
   .card-body h5{
     color: white;
   }

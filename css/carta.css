@@ -238,10 +238,10 @@ h2{
   text-align: center;
 }
 
-.cosmopolitan-container .FRASE1{
+.cosmopolitan-container h2{
   font-family: "Passion One", serif;
   font-weight: 700;
-  font-size: 4.5em;
+  font-size: 2em;
 }
 
 
@@ -265,7 +265,6 @@ h2{
   z-index: 1; 
   margin: 0;
 }
-
 
 
 /* COSMOPOLITAN DESCRIPCIÓN */
@@ -383,16 +382,6 @@ h2{
   font-weight: 700;
   font-family: "Passion One", serif;
 }
-.FRASE2{
-  font-size: 4.5em;
-  font-weight: 700;
-  font-family: "Passion One", serif;
-}
-.FRASE3{
-  font-size: 3.5em;
-  font-weight: 700;
-  font-family: "Passion One", serif;
-}
 
 
 /*TEXTO ANIMADO */
@@ -429,66 +418,107 @@ span {
 
 /* RECETA */
 
-
 #biografia {
   margin-bottom: 8em;
 }
 
 .cosmopolitan-recipe h3 {
-  font-size: 3em;
+  font-size: 1rem;
 }
 
 .cosmopolitan-recipe ol {
-  font-size: 1.25em;
+  font-size: 0.75em;
   margin-top: 5%;
   margin-right: 5em;
   text-align: justify;
 }
 
 .cosmopolitan-recipe p {
-  font-size: 1.25em;
+  font-size: 1em;
 }
 
 .bio-bg2 {
   position: relative;
-  height: 90vh;
+  height: 100vh;
 }
 
 .bio-bg2 h2 {
   font-family: "Passion One", serif;
-  top: 40%; 
-  left: 50%; 
-  transform: translate(-50%, 10%); 
+  top: 40%;
+  left: 50%;
   color: #ffffff;
-  font-size: 10rem; 
   z-index: 10;
   font-weight: 700;
   text-align: center;
   line-height: 0.8;
   margin-top: 60%;
+  font-size: 3em;
 }
+
+/* Fondo de la imagen */
 .bg-light2 {
-  --bs-bg-opacity: 1;
-  background-color: rgba;
+
   padding-top: 8%;
-  }
+}
 
 .bio-bg2 p {
- margin-top: 2em;
- margin-right: 5em;
- text-align: justify;
+  margin-top: 2em;
+  margin-right: 5em;
+  text-align: justify;
 }
 
 .responsive-heading2 {
-  font-size: 2rem; 
+  font-size: 2rem;
+  text-align: center;
 }
 
-.container-fluid2 {
-  position: relative;
+/* Estilos para asegurar que el texto sea responsive */
+@media (max-width: 768px) {
+  .bio-bg2 h2 {
+    font-size: 3rem; /* Reduce el tamaño del título */
+    margin-top: 5%;
+  }
+  .text-white {
+    max-width: 100%; 
+  }
+  
+
+  .cosmopolitan-recipe h3 {
+    font-size: 1rem;
+  }
+
+  .cosmopolitan-recipe ol {
+    margin-right: 1em;
+    font-size: 0.75rem; /* Reducir el tamaño del texto */
+  }
+
+  .cosmopolitan-recipe p {
+    font-size: 1rem;
+  }
+  .bg-light2 img {
+    max-width: 100%;  /* La imagen ocupará el 100% del contenedor */
+    height: auto;
+  }
+  /* Aseguramos que el texto aparezca debajo de la imagen en móviles */
+  .container-fluid2 {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
-.col-12.col-md-6.bg-light2 {
-  position: relative;
+@media (max-width: 480px) {
+  .bio-bg2 h2 {
+    font-size: 3rem; /* Más pequeño en dispositivos aún más pequeños */
+  }
+
+  .cosmopolitan-recipe h3 {
+    font-size: 1.5rem;
+  }
+
+  .bg-light2 img {
+    max-width: 100%;  /* La imagen ocupará el 100% del contenedor */
+    height: auto;
+  }
 }
 
 #marquee-section {
@@ -518,7 +548,56 @@ span {
   }
 }
 
+/*TEXTO MOTIVADOR */
+.text-motivador {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 3em;
+}
 
+.FRASE1 {
+  font-size: 6vw; 
+}
+
+
+.bg-light {
+  background-color: rgb(21, 21, 21) !important;
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+@keyframes blinkCaret {
+  50% {
+      border-color: transparent;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .FRASE1 {
+    font-size: 8vw; 
+  }
+
+  .text-motivador {
+    padding: 1.5em; 
+}
+}
+
+/* Media query para tabletas o pantallas más grandes que móviles pero más pequeñas que desktop */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .FRASE1 {
+    font-size: 5vw; 
+  }
+}
 
 
 /*-----------------------------------*\
