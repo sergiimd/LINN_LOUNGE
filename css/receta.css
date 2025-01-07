@@ -225,12 +225,27 @@
     color: white !important;
   }
 
+
+  /*-----------------------------------*\
+  #CARTA
+  \*-----------------------------------*/
+
+
+  #bebidas {
+    padding-top: 50%;
+  }
   .card-body{
     padding: 2em;
   }
+
+  .card-body h5{
+    color: white;
+  }
+
   .card-title {
     font-size: 1.25rem;
     font-weight: bold;
+    
   }
   .card-text {
     font-size: 1rem;
@@ -308,8 +323,9 @@
     margin-bottom: 5px;
     }
     
-    /* footer medio*/
-    .footer .footer-center {
+   
+  /* footer medio*/
+  .footer .footer-center {
     width: 30%;
     }
     
@@ -337,9 +353,11 @@
     vertical-align: middle;
     margin: 0;
     font-weight: 400;
+    width: 80%;
     }
     
     .footer .footer-center p span {
+    font-family: "Montserrat", sans-serif;
     display: block;
     font-weight: normal;
     font-size: 14px;
@@ -347,7 +365,7 @@
     }
     
     .footer .footer-center p a {
-    color:  #FF3D00;
+    color:  #cc0000;
     text-decoration: none;
     }
     
@@ -364,7 +382,8 @@
     }
     
     .footer h2 span {
-    color:  #FF3D00;
+    color:  #cc0000;
+    font-family: "Montserrat", sans-serif;
     }
     
     .footer .menu {

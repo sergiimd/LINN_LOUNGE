@@ -551,12 +551,53 @@ background-color: #000000;
 .custom-card .card-img-overlay h5 {
   font-family: "Passion One", serif;
   font-size: 3em;
+  text-align: center;
 }
 
 /* Margen entre tarjetas */
 .row > .col-md-4 {
   margin-bottom: 15px;
 }
+
+
+
+
+/*-----------------------------------*\
+GALERÍA
+\*-----------------------------------*/
+
+
+.responsive-heading2 {
+  font-family: "Passion One", serif;
+  font-size: 10em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 0.8;
+  margin-top: 7%;
+  margin-bottom: 4%;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*-----------------------------------*\
@@ -709,9 +750,11 @@ span {
   vertical-align: middle;
   margin: 0;
   font-weight: 400;
+  width: 80%;
   }
   
   .footer .footer-center p span {
+  font-family: "Montserrat", sans-serif;
   display: block;
   font-weight: normal;
   font-size: 14px;
@@ -719,7 +762,7 @@ span {
   }
   
   .footer .footer-center p a {
-  color:  #FF3D00;
+  color:  #cc0000;
   text-decoration: none;
   }
   
@@ -736,7 +779,8 @@ span {
   }
   
   .footer h2 span {
-  color:  #FF3D00;
+  color:  #cc0000;
+  font-family: "Montserrat", sans-serif;
   }
   
   .footer .menu {
