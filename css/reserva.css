@@ -367,6 +367,17 @@ button:focus , .submit-btn:focus{
   color: #ec1c24;
 }
 
+.form-headline{
+      font-family: "Passion One", serif;
+      color: #ffffff;
+      z-index: 10;
+      font-weight: 700;
+      line-height: 0.8;
+      font-size: 3em;
+}
+
+
+
 
 /*-----------------------------------*\
 #FOOTER

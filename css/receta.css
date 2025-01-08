@@ -233,6 +233,13 @@
     margin-top: 3.5em;
     padding: 20px;
     text-align: center;
+      font-family: "Passion One", serif;
+      color: #ffffff;
+      z-index: 10;
+      font-weight: 700;
+      line-height: 0.8;
+      font-size: 3em;
+    
 }
   
   .container {

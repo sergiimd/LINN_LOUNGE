@@ -241,7 +241,7 @@ h2{
 .cosmopolitan-container h2{
   font-family: "Passion One", serif;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 112px;
 }
 
 
@@ -752,19 +752,173 @@ span {
     margin: 0;
     }
       
-      @media (max-width: 767px) {
-        .footer {
-          font-size: 14px;
-        }
-        .footer .footer-left,
-        .footer .footer-center,
-        .footer .footer-right {
-          display: block;
-          width: 100%;
-          margin-bottom: 40px;
-          text-align: center;
-        }
-        .footer .footer-center i {
-          margin-left: 0;
-        }
-      }
+/* ----------- RESPONSIVE DESIGN ----------- */
+  
+  /* Ajustes para tablet (menos de 768px de ancho) */
+  @media (max-width: 768px) {
+    .footer {
+      font-size: 14px;
+    }
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .footer .footer-center i {
+      margin-left: 0;
+    }
+
+    .titulo{
+      margin-top: 4em;
+      text-align: center;
+  }
+
+  .btn-reserva{
+    padding: 0.5rem 1rem;
+}
+
+.cosmopolitan-container h2 {
+  font-size: 2em;
+}
+
+.cosmopolitan-container {
+margin-top: 3em;
+}
+
+.btn {
+font-size: 1em;
+}
+
+.running-line {
+font-size: 8vw;
+}
+
+.running-line-wrapper {
+margin-bottom: 1em;
+}
+
+.bio-bg2 h2 {
+margin-top: 0em;
+}
+
+.cosmopolitan-recipe h3 {
+font-size: 1rem;
+}
+
+.bio-bg2 p {
+margin-right: 0.1em;
+
+}
+
+#biografia {
+  margin-bottom: 0em; 
+}
+
+.py-5 {
+  padding-top: 0rem !important;
+}
+
+}
+
+  /* Ajustes para tablet (menos de 980px de ancho) */
+  @media (max-width: 980px) {
+    .footer {
+      font-size: 14px;
+    }
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .footer .footer-center i {
+      margin-left: 0;
+    }
+
+    .titulo{
+      margin-top: 4em;
+      text-align: center;
+  }
+
+  .btn-reserva{
+    padding: 0.5rem 1rem;
+}
+
+.cosmopolitan-container h2 {
+  font-size: 2em;
+}
+
+.cosmopolitan-container {
+margin-top: 3em;
+}
+
+.btn {
+font-size: 1em;
+}
+
+.running-line {
+font-size: 8vw;
+}
+
+.running-line-wrapper {
+margin-bottom: 1em;
+}
+
+.bio-bg2 h2 {
+margin-top: 6.5em;
+}
+
+.cosmopolitan-recipe h3 {
+font-size: 1rem;
+}
+
+.bio-bg2 p {
+margin-right: 0.1em;
+
+}
+}
+
+/* Ajustes para móviles (menos de 480px de ancho) */
+@media (max-width: 480px) {
+  .cosmopolitan-container h2 {
+    font-size: 1em;
+}
+
+.cosmopolitan-container {
+  margin-top: 2em;
+}
+
+.btn {
+  font-size: 1em;
+}
+
+.running-line {
+  font-size: 8vw;
+}
+
+.running-line-wrapper {
+  margin-bottom: 1em;
+}
+
+.bio-bg2 h2 {
+  margin-top: 4em;
+}
+
+.cosmopolitan-recipe h3 {
+  font-size: 1rem;
+}
+
+.bio-bg2 p {
+  margin-right: 0.1em;
+
+}
+
+.mb-4 {
+  margin-top: 7rem;
+}
+}
