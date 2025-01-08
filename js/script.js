@@ -10,6 +10,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+        gsap.to("#animatedImage", {
+          x: 600, // Mover la imagen 400px en el eje X
+          rotation: 360, // Girar la imagen 360 grados
+          duration: 2, // Duración de la animación en segundos
+          ease: "power1.inOut", // Tipo de suavizado de la animación
+          repeat: -1, // Repetir la animación infinitamente
+          yoyo: true // La animación va y viene
+        });
+        
 
 // ILUSTRACIÓN COPA CAMBIO IMAGEN
 var copa = $("#coctel-img");
@@ -188,6 +197,10 @@ signInButton.addEventListener('click', () => {
     signInContainer.style.display = 'flex';
     signUpContainer.style.display = 'none';
 });
+
+
+
+
 
 
 
