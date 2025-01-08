@@ -229,9 +229,14 @@
   /*-----------------------------------*\
   #CARTA
   \*-----------------------------------*/
-  .bebidas-container {
-    padding: 2em;
-    margin-top: 80px; /* Asegura que haya espacio suficiente para que no se solape con el navbar */
+  .titulo{
+    margin-top: 3.5em;
+    padding: 20px;
+    text-align: center;
+}
+  
+  .container {
+    padding: 20px;
 }
   .card-body h5{
     color: white;
@@ -406,19 +411,73 @@
     margin: 0;
     }
       
-      @media (max-width: 767px) {
-        .footer {
-          font-size: 14px;
-        }
-        .footer .footer-left,
-        .footer .footer-center,
-        .footer .footer-right {
-          display: block;
-          width: 100%;
-          margin-bottom: 40px;
-          text-align: center;
-        }
-        .footer .footer-center i {
-          margin-left: 0;
-        }
-      }
+
+
+/* ----------- RESPONSIVE DESIGN ----------- */
+  
+  /* Ajustes para tablet (menos de 768px de ancho) */
+  @media (max-width: 768px) {
+    .footer {
+      font-size: 14px;
+    }
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .footer .footer-center i {
+      margin-left: 0;
+    }
+
+    .titulo{
+      margin-top: 4em;
+      text-align: center;
+  }
+
+  .btn-reserva{
+    padding: 0.5rem 1rem;
+}
+}
+
+  /* Ajustes para tablet (menos de 980px de ancho) */
+  @media (max-width: 980px) {
+    .footer {
+      font-size: 14px;
+    }
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .footer .footer-center i {
+      margin-left: 0;
+    }
+
+    .titulo{
+      margin-top: 4em;
+      text-align: center;
+  }
+
+  .btn-reserva{
+    padding: 0.5rem 1rem;
+}
+}
+
+/* Ajustes para móviles (menos de 480px de ancho) */
+@media (max-width: 480px) {
+  .titulo{
+    margin-top: 4em;
+    text-align: center;
+}
+
+.container {
+  margin-top: -30px;
+}
+
+}
