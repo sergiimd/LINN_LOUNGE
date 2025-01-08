@@ -227,47 +227,44 @@ h2{
 
 
 /* COSMOPOLITAN */
-
 .cosmopolitan {
   height: 100vh;
-  color:white;
+  color: white;
   font-size: 3em;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.cosmopolitan-container h2{
+.cosmopolitan-container h2 {
   font-family: "Passion One", serif;
   font-weight: 700;
   font-size: 112px;
 }
 
-
 .cosmopolitan-container {
-  position: relative; 
-  text-align: center; 
+  position: relative;
+  text-align: center;
 }
 
 .cosmopolitan-container img {
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -63%); 
-  z-index: 2; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -63%);
+  z-index: 2;
   width: 30%;
-  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.3))
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.3));
 }
 
 .cosmopolitan-container h2 {
-  position: relative; 
-  z-index: 1; 
+  position: relative;
+  z-index: 1;
   margin: 0;
 }
 
-/*GSAP*/
-
+/* GSAP */
 .image-container {
   width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
   height: 150px;
@@ -278,6 +275,7 @@ h2{
   height: 100%;
   object-fit: contain; /* Asegura que la imagen no se distorsione */
 }
+
 /* COSMOPOLITAN DESCRIPCIÓN */
 
 #descripcion {
@@ -485,14 +483,22 @@ span {
 
 /* Estilos para asegurar que el texto sea responsive */
 @media (max-width: 768px) {
-  .bio-bg2 h2 {
-    font-size: 3rem; /* Reduce el tamaño del título */
-    margin-top: 5%;
+  .cosmopolitan-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px; /* Espacio entre la imagen y el separador */
+    position: relative;
+    top: 20px; /* Ajusta la posición del separador por debajo de la imagen */
+    margin-top: 20px; 
+  }
+  
+
+
   }
   .text-white {
     max-width: 100%; 
   }
-  
 
   .cosmopolitan-recipe h3 {
     font-size: 1rem;
@@ -518,6 +524,12 @@ span {
 }
 
 @media (max-width: 480px) {
+
+  .cosmopolitan-container {
+    font-size: 1em;
+    
+  }
+
   .bio-bg2 h2 {
     font-size: 3rem; /* Más pequeño en dispositivos aún más pequeños */
   }
@@ -796,7 +808,7 @@ span {
 }
 
 .cosmopolitan-container {
-margin-top: 3em;
+margin-top: 8em;
 }
 
 .btn {
@@ -860,13 +872,33 @@ margin-right: 0.1em;
     padding: 0.5rem 1rem;
 }
 
+
+.cosmopolitan {
+  flex-direction: column; /* Cambia la dirección del flex a columna */
+  justify-content: flex-start; /* Alinea todo al inicio */
+  align-items: center; /* Centra los elementos en el eje horizontal */
+}
+
+.cosmopolitan-container {
+  text-align: center;
+  margin-bottom: 20px; /* Espacio entre el texto y el separador */
+  position: relative;
+  margin-top: 7em;
+}
+
+/* Posición del separador por debajo */
+.image-container {
+  width: 20%; /* Ajusta el tamaño de la imagen al 80% del ancho */
+  height: auto; /* Mantiene la altura proporcional */
+  margin-top: 20px; /* Añade espacio entre el texto y la imagen del separador */
+  margin-bottom: 20px; /* Añade espacio debajo del separador */
+}
+
+
 .cosmopolitan-container h2 {
   font-size: 2em;
 }
 
-.cosmopolitan-container {
-margin-top: 3em;
-}
 
 .btn {
 font-size: 1em;
@@ -900,8 +932,25 @@ margin-right: 0.1em;
     font-size: 1em;
 }
 
+.cosmopolitan {
+  flex-direction: column; /* Cambia la dirección del flex a columna */
+  justify-content: flex-start; /* Alinea todo al inicio */
+  align-items: center; /* Centra los elementos en el eje horizontal */
+}
+
 .cosmopolitan-container {
-  margin-top: 2em;
+  text-align: center;
+  margin-bottom: 20px; /* Espacio entre el texto y el separador */
+  position: relative;
+  margin-top: 10em;
+}
+
+/* Posición del separador por debajo */
+.image-container {
+  width: 20%; /* Ajusta el tamaño de la imagen al 80% del ancho */
+  height: auto; /* Mantiene la altura proporcional */
+  margin-top: 20px; /* Añade espacio entre el texto y la imagen del separador */
+  margin-bottom: 20px; /* Añade espacio debajo del separador */
 }
 
 .btn {
