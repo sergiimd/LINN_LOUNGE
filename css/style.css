@@ -400,6 +400,7 @@ background-color: #000000;
 }
 
 
+
 /*-----------------------------------*\
 #DOBLE FOTO
 \*-----------------------------------*/
@@ -563,6 +564,21 @@ background-color: #000000;
 /*-----------------------------------*\
 GALERÍA
 \*-----------------------------------*/
+
+
+.lightbox-content img {
+  max-width: 500px;  /* La imagen no excederá el ancho del contenedor */
+  max-height: 800px; /* Limita la altura máxima sin deformar */
+  width: auto; /* Mantiene la proporción */
+  height: auto; /* Mantiene la proporción */
+  margin: 0 auto; /* Centra la imagen */
+  display: block; /* Asegura que la imagen se centre */
+}
+
+.carousel-caption {
+  background: transparent !important; /* Elimina cualquier color de fondo */
+}
+
 .responsive-heading2 {
   font-family: "Passion One", serif;
   font-size: 112px;

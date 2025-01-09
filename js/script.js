@@ -1,261 +1,172 @@
-const html = document.querySelector("html");
-html.setAttribute("data-bs-theme", "dark");
-
 document.addEventListener("DOMContentLoaded", () => {
+  const html = document.querySelector("html");
+  html.setAttribute("data-bs-theme", "dark");
 
-    // Inicializar AOS
+  // Inicializar AOS
+  AOS.init();
 
-   
-        AOS.init();
+  // ILUSTRACIÓN COPA CAMBIO IMAGEN
+  const copa = $("#coctel-img");
+  copa.hover(
+      function () {
+          $(this).attr("src", "img/HOME/coctel2.png");
+      },
+      function () {
+          $(this).attr("src", "img/HOME/coctel1.png");
+      }
+  );
 
+  // --- Create LightBox
+  const galleryGrid = document.querySelector(".gallery-grid");
+  const links = galleryGrid.querySelectorAll("a");
+  const imgs = galleryGrid.querySelectorAll("img");
+  const lightboxModal = document.getElementById("lightbox-modal");
+  const bsModal = new bootstrap.Modal(lightboxModal);
+  const modalBody = lightboxModal.querySelector(".lightbox-content");
 
+  function createCaption(caption) {
+      return `<div class="carousel-caption d-none d-md-block">
+      <h4 class="m-0">${caption}</h4>
+    </div>`;
+  }
 
-        gsap.to("#animatedImage", {
-          x: 600, // Mover la imagen 400px en el eje X
-          rotation: 360, // Girar la imagen 360 grados
-          duration: 2, // Duración de la animación en segundos
-          ease: "power1.inOut", // Tipo de suavizado de la animación
-          repeat: -1, // Repetir la animación infinitamente
-          yoyo: true // La animación va y viene
-        });
-        
+  function createIndicators(img) {
+      let markup = "";
 
-// ILUSTRACIÓN COPA CAMBIO IMAGEN
-var copa = $("#coctel-img");
+      const countSlides = links.length;
+      const parentCol = img.closest(".col");
+      const curIndex = [...parentCol.parentElement.children].indexOf(parentCol);
 
-copa.hover(
-    function() {
-    $(this).attr("src", "img/HOME/coctel2.png");
-    },
-    function() {
-        $(this).attr("src", "img/HOME/coctel1.png");
-    }
-);
+      for (let i = 0; i < countSlides; i++) {
+          markup += `
+      <button type="button" data-bs-target="#lightboxCarousel"
+        data-bs-slide-to="${i}"
+        ${i === curIndex ? 'class="active" aria-current="true"' : ""}
+        aria-label="Slide ${i + 1}"></button>`;
+      }
 
+      return markup;
+  }
 
+  function createSlides(img) {
+      let markup = "";
+      const currentImgSrc = img.closest(".gallery-item").getAttribute("href");
 
+      for (const img of imgs) {
+          const imgSrc = img.closest(".gallery-item").getAttribute("href");
+          const imgAlt = img.getAttribute("alt");
 
-        
-    // --- Create LightBox
-    const galleryGrid = document.querySelector(".gallery-grid");
-    const links = galleryGrid.querySelectorAll("a");
-    const imgs = galleryGrid.querySelectorAll("img");
-    const lightboxModal = document.getElementById("lightbox-modal");
-    const bsModal = new bootstrap.Modal(lightboxModal);
-    const modalBody = lightboxModal.querySelector(".lightbox-content");
-
-    function createCaption(caption) {
-        return `<div class="carousel-caption d-none d-md-block">
-        <h4 class="m-0">${caption}</h4>
+          markup += `
+      <div class="carousel-item${currentImgSrc === imgSrc ? " active" : ""}">
+        <img class="d-block img-fluid w-100" src=${imgSrc} alt="${imgAlt}">
+        ${imgAlt ? createCaption(imgAlt) : ""}
       </div>`;
-    }
+      }
 
-    function createIndicators(img) {
-        let markup = "",
-            i,
-            len;
+      return markup;
+  }
 
-        const countSlides = links.length;
-        const parentCol = img.closest(".col");
-        const curIndex = [...parentCol.parentElement.children].indexOf(parentCol);
+  function createCarousel(img) {
+      const markup = `
+    <div id="lightboxCarousel" class="carousel slide carousel-fade" data-bs-ride="true">
+      <div class="carousel-indicators">${createIndicators(img)}</div>
+      <div class="carousel-inner justify-content-center mx-auto">${createSlides(img)}</div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>`;
+      modalBody.innerHTML = markup;
+  }
 
-        for (i = 0, len = countSlides; i < len; i++) {
-            markup += `
-        <button type="button" data-bs-target="#lightboxCarousel"
-          data-bs-slide-to="${i}"
-          ${i === curIndex ? 'class="active" aria-current="true"' : ""}
-          aria-label="Slide ${i + 1}">
-        </button>`;
-        }
+  for (const link of links) {
+      link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const currentImg = link.querySelector("img");
+          const lightboxCarousel = document.getElementById("lightboxCarousel");
 
-        return markup;
-    }
+          if (lightboxCarousel) {
+              const parentCol = link.closest(".col");
+              const index = [...parentCol.parentElement.children].indexOf(parentCol);
 
-    function createSlides(img) {
-        let markup = "";
-        const currentImgSrc = img.closest(".gallery-item").getAttribute("href");
+              const bsCarousel = new bootstrap.Carousel(lightboxCarousel);
+              bsCarousel.to(index);
+          } else {
+              createCarousel(currentImg);
+          }
 
-        for (const img of imgs) {
-            const imgSrc = img.closest(".gallery-item").getAttribute("href");
-            const imgAlt = img.getAttribute("alt");
+          bsModal.show();
+      });
+  }
 
-            markup += `
-        <div class="carousel-item${currentImgSrc === imgSrc ? " active" : ""}">
-          <img class="d-block img-fluid w-100" src=${imgSrc} alt="${imgAlt}">
-          ${imgAlt ? createCaption(imgAlt) : ""}
-        </div>`;
-        }
+  // --- Support Fullscreen
+  const fsEnlarge = document.querySelector(".btn-fullscreen-enlarge");
+  const fsExit = document.querySelector(".btn-fullscreen-exit");
 
-        return markup;
-    }
+  function enterFS() {
+      lightboxModal
+          .requestFullscreen()
+          .catch((err) => {
+              alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+          });
+      fsEnlarge.classList.toggle("d-none");
+      fsExit.classList.toggle("d-none");
+  }
 
-    function createCarousel(img) {
-        const markup = `
-      <!-- Lightbox Carousel -->
-      <div id="lightboxCarousel" class="carousel slide carousel-fade" data-bs-ride="true">
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-          ${createIndicators(img)}
-        </div>
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner justify-content-center mx-auto">
-          ${createSlides(img)}
-        </div>
-        <!-- Controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      `;
+  function exitFS() {
+      document.exitFullscreen();
+      fsExit.classList.toggle("d-none");
+      fsEnlarge.classList.toggle("d-none");
+  }
 
-        modalBody.innerHTML = markup;
-    }
+  if (fsEnlarge && fsExit) {
+      fsEnlarge.addEventListener("click", (e) => {
+          e.preventDefault();
+          enterFS();
+      });
 
-    for (const link of links) {
-        link.addEventListener("click", function (e) {
-            e.preventDefault();
-            const currentImg = link.querySelector("img");
-            const lightboxCarousel = document.getElementById("lightboxCarousel");
+      fsExit.addEventListener("click", (e) => {
+          e.preventDefault();
+          exitFS();
+      });
+  }
 
-            if (lightboxCarousel) {
-                const parentCol = link.closest(".col");
-                const index = [...parentCol.parentElement.children].indexOf(parentCol);
 
-                const bsCarousel = new bootstrap.Carousel(lightboxCarousel);
-                bsCarousel.to(index);
-            } else {
-                createCarousel(currentImg);
-            }
+  // Manejo de botones Sign-Up/Sign-In
+  const signUpButton = document.getElementById("signUpButton");
+  const signInButton = document.getElementById("signInButton");
+  const signUpContainer = document.querySelector(".sign-up-container");
+  const signInContainer = document.querySelector(".sign-in-container");
 
-            bsModal.show();
-        });
-    }
+  if (signInButton && signUpButton && signInContainer && signUpContainer) {
+      signUpButton.addEventListener("click", () => {
+          signInContainer.style.display = "none";
+          signUpContainer.style.display = "flex";
+      });
 
-    // --- Support Fullscreen
-    const fsEnlarge = document.querySelector(".btn-fullscreen-enlarge");
-    const fsExit = document.querySelector(".btn-fullscreen-exit");
-
-    function enterFS() {
-        lightboxModal
-            .requestFullscreen()
-            .then({})
-            .catch((err) => {
-                alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
-            });
-        fsEnlarge.classList.toggle("d-none");
-        fsExit.classList.toggle("d-none");
-    }
-
-    function exitFS() {
-        document.exitFullscreen();
-        fsExit.classList.toggle("d-none");
-        fsEnlarge.classList.toggle("d-none");
-    }
-
-    fsEnlarge.addEventListener("click", (e) => {
-        e.preventDefault();
-        enterFS();
-    });
-
-    fsExit.addEventListener("click", (e) => {
-        e.preventDefault();
-        exitFS();
-    });
+      signInButton.addEventListener("click", () => {
+          signInContainer.style.display = "flex";
+          signUpContainer.style.display = "none";
+      });
+  }
 });
 
-const signUpButton = document.getElementById('signUpButton');
-const signInButton = document.getElementById('signInButton');
-const signUpContainer = document.querySelector('.sign-up-container');
-const signInContainer = document.querySelector('.sign-in-container');
 
-if (signInButton)  {
-signUpButton.addEventListener('click'), () => {
-    const signInContainer = document.querySelector('#signInContainer');
-    const signUnContainer = document.querySelector('#signUnContainer');
-
-
-    if (signInContainer && signUpContainer) {
-        signInContainer.style.display ='none'; 
-        signUnContainer.style.display = 'flex';
-    }
-}};
-
-
-if (signInButton) {
-    signUpButton.addEventListener('click', () => {
-        const signInContainer = document.querySelector('#signIpContainer');
-        const signUpContainer = document.querySelector('#signUpContainer');
-    })
+  // Animación GSAP
+  if (document.querySelector("#animatedImage")) {
+    gsap.to("#animatedImage", {
+        x: 600, // Mover la imagen 400px en el eje X
+        rotation: 360, // Girar la imagen 360 grados
+        duration: 2, // Duración de la animación en segundos
+        ease: "power1.inOut", // Tipo de suavizado de la animación
+        repeat: -1, // Repetir la animación infinitamente
+        yoyo: true, // La animación va y viene
+    });
 }
-
-signInButton.addEventListener('click', () => {
-    signInContainer.style.display = 'flex';
-    signUpContainer.style.display = 'none';
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 const nameEl = document.querySelector("#name");
