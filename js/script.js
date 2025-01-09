@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   );
 
-  // --- Create LightBox
+  // --- Galería
   const galleryGrid = document.querySelector(".gallery-grid");
   const links = galleryGrid.querySelectorAll("a");
   const imgs = galleryGrid.querySelectorAll("img");
@@ -103,7 +103,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
-  // --- Support Fullscreen
   const fsEnlarge = document.querySelector(".btn-fullscreen-enlarge");
   const fsExit = document.querySelector(".btn-fullscreen-exit");
 
@@ -135,8 +134,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
-
-  // Manejo de botones Sign-Up/Sign-In
   const signUpButton = document.getElementById("signUpButton");
   const signInButton = document.getElementById("signInButton");
   const signUpContainer = document.querySelector(".sign-up-container");
@@ -156,18 +153,16 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-  // Animación GSAP
   if (document.querySelector("#animatedImage")) {
     gsap.to("#animatedImage", {
-        x: 600, // Mover la imagen 400px en el eje X
-        rotation: 360, // Girar la imagen 360 grados
-        duration: 2, // Duración de la animación en segundos
-        ease: "power1.inOut", // Tipo de suavizado de la animación
-        repeat: -1, // Repetir la animación infinitamente
-        yoyo: true, // La animación va y viene
+        x: 600, 
+        rotation: 360, 
+        duration: 2, 
+        ease: "power1.inOut", 
+        repeat: -1, 
+        yoyo: true, 
     });
 }
-
 
 const nameEl = document.querySelector("#name");
 const emailEl = document.querySelector("#email");

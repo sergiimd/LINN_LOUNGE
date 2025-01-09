@@ -119,7 +119,6 @@ background-color: #000000;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  /* background-color: rgb(14, 14, 14); */
   }
 
   body {
@@ -174,21 +173,14 @@ background-color: #000000;
         border-bottom: 1px solid #ddd;
     }
   
-
-
-
 /*-----------------------------------*\
 #LOGO BLANCO
 \*-----------------------------------*/
-
-
 #logoblanco {
   width: 125px;
   height: auto;
   margin-left: 20px;
 }
-
-
 
 /*-----------------------------------*\
 #Menú de navegación
@@ -320,7 +312,6 @@ background-color: #000000;
       object-fit: cover;
   }
 
-
 /*-----------------------------------*\
 #DESCRIPCIÓN LYNN LOUNGE
 \*-----------------------------------*/
@@ -341,20 +332,19 @@ background-color: #000000;
 }
 
 .bio-bg {
-  display: flex; /* Activa Flexbox */
-  flex-direction: column; /* Organiza los hijos en una columna */
-  align-items: flex-start; /* Alinea elementos al inicio de la columna */
-  gap: 2rem; /* Espaciado entre el h2, p y la imagen */
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+  gap: 2rem; 
 }
 
 #coctel-img {
-  align-self: flex-start; /* Asegura que la imagen esté alineada a la izquierda */
-  max-width: 80%; /* Imagen adaptada al contenedor */
-  height: auto; /* Mantiene proporciones */
+  align-self: flex-start; 
+  max-width: 80%; 
+  height: auto; 
   margin-bottom: -80%;
   margin-left: 4%;
 }
-
 
 /*-----------------------------------*\
 #FRASE SEPARADOR
@@ -399,8 +389,6 @@ background-color: #000000;
   
 }
 
-
-
 /*-----------------------------------*\
 #DOBLE FOTO
 \*-----------------------------------*/
@@ -423,7 +411,7 @@ background-color: #000000;
   color: white;
   font-size: 5em;
   font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto para mejor visibilidad */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
   font-family: "Passion One", serif;
   text-align: center;
   line-height: 5;
@@ -436,9 +424,9 @@ background-color: #000000;
 }
 
 .image-container img {
-  width: 50%; /* Cada imagen ocupa la mitad del contenedor */
+  width: 50%; 
   height: auto;
-  float: left; /* Para que se alineen una al lado de la otra sin espacio */
+  float: left; 
 }
 
 .text-overlay2 {
@@ -449,9 +437,8 @@ background-color: #000000;
   color: white;
   font-size: 8em;
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto para mejor visibilidad */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
-
 
 /*-----------------------------------*\
 #EVENTOS
@@ -528,26 +515,24 @@ background-color: #000000;
 /*-----------------------------------*\
 #CARROUSEL
 \*-----------------------------------*/
-/* Tamaño personalizado de las tarjetas */
 .custom-card {
-  height: 600px; /* Altura fija para todas las tarjetas */
-  width: 100%; /* Ocupa el ancho completo de su contenedor */
-  overflow: hidden; /* Oculta el contenido desbordado */
+  height: 600px; 
+  width: 100%; 
+  overflow: hidden; 
   margin-top: 30%;
 }
 
 .custom-card .card-img {
-  height: 100%; /* Imagen ajustada a la altura de la tarjeta */
-  object-fit: cover; /* Escala la imagen para cubrir el espacio sin deformarse */
+  height: 100%; 
+  object-fit: cover; 
 }
 
-/* Ajusta el texto superpuesto */
 .custom-card .card-img-overlay {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Ubica el contenido en la parte inferior */
-  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
-  color: white; /* Color del texto blanco */
+  justify-content: flex-end; 
+  background: rgba(0, 0, 0, 0.5); 
+  color: white; 
 }
 
 .custom-card .card-img-overlay h5 {
@@ -556,7 +541,6 @@ background-color: #000000;
   text-align: center;
 }
 
-/* Margen entre tarjetas */
 .row > .col-md-4 {
   margin-bottom: 15px;
 }
@@ -567,16 +551,16 @@ GALERÍA
 
 
 .lightbox-content img {
-  max-width: 500px;  /* La imagen no excederá el ancho del contenedor */
-  max-height: 800px; /* Limita la altura máxima sin deformar */
-  width: auto; /* Mantiene la proporción */
-  height: auto; /* Mantiene la proporción */
-  margin: 0 auto; /* Centra la imagen */
-  display: block; /* Asegura que la imagen se centre */
+  max-width: 500px;  
+  max-height: 800px; 
+  width: auto; 
+  height: auto; 
+  margin: 0 auto; 
+  display: block; 
 }
 
 .carousel-caption {
-  background: transparent !important; /* Elimina cualquier color de fondo */
+  background: transparent !important; 
 }
 
 .responsive-heading2 {
@@ -599,7 +583,6 @@ GALERÍA
   padding: 40px 0;
   font-family: "Passion One", serif; 
 }
-
 
 .running-line {
   font-size: 80px;
@@ -632,19 +615,18 @@ span {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100vh; /* Ajusta la altura a la pantalla */
+  height: 100vh; 
   padding: 20px;
 }
 
 .event-text {
-  max-width: 50%; /* Para que el texto no se estire demasiado */
+  max-width: 50%; 
 }
 
 .event-image img {
   width: 100%;
   height: auto;
 }
-
 
 /*-----------------------------------*\
 #FOOTER
@@ -799,7 +781,6 @@ span {
  
     /* ----------- RESPONSIVE DESIGN ----------- */
   
-
   /* Ajustes para tablet (menos de 980px de ancho) */
   @media (max-width: 980px) {
     .footer {
@@ -858,13 +839,13 @@ span {
   margin-left: 2.1em;}
 
 .col-md-6 {
-  width: 100%; /* Hacemos que las columnas ocupen el 100% del ancho en pantallas pequeñas */
+  width: 100%; 
 }
 
 .bg-light2 img {
   width: 100%;
-  height: auto; /* Aseguramos que la imagen no sobresalga */
-  object-fit: cover; /* La imagen se ajusta sin deformarse */
+  height: auto; 
+  object-fit: cover; 
 }
 }
 
@@ -909,14 +890,12 @@ span {
 }
 
 .col-md-6 {
-  width: 100%; /* Hacemos que las columnas ocupen el 100% del ancho en pantallas pequeñas */
+  width: 100%; 
 }
 
 .bg-light2 img {
   width: 100%;
-  height: auto; /* Aseguramos que la imagen no sobresalga */
-  object-fit: cover; /* La imagen se ajusta sin deformarse */
+  height: auto; 
+  object-fit: cover; 
 }
-
-
 }

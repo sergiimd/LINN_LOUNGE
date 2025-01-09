@@ -114,7 +114,6 @@
     font-weight: 900;
   }
   
-  
   /*-----------------------------------*\
   #HEADER
   \*-----------------------------------*/
@@ -123,7 +122,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    /* background-color: rgb(14, 14, 14); */
     }
   
     body {
@@ -178,7 +176,6 @@
           border-bottom: 1px solid #ddd;
       }
   
-  
   /*-----------------------------------*\
   #LOGO BLANCO
   \*-----------------------------------*/
@@ -187,7 +184,6 @@
     height: auto;
     margin-left: 20px;
   }
-  
   
   /*-----------------------------------*\
   #Menú de navegación
@@ -225,7 +221,6 @@
     color: white !important;
   }
 
-
   /*-----------------------------------*\
   #CARTA
   \*-----------------------------------*/
@@ -239,7 +234,6 @@
       font-weight: 700;
       line-height: 0.8;
       font-size: 3em;
-    
 }
   
   .container {
@@ -486,5 +480,4 @@
 .container {
   margin-top: -30px;
 }
-
 }

@@ -111,7 +111,6 @@ h2{
   font-weight: 900;
 }
 
-
 /*-----------------------------------*\
 #HEADER
 \*-----------------------------------*/
@@ -174,7 +173,6 @@ h2{
         border-bottom: 1px solid #ddd;
     }
   
-
 /*-----------------------------------*\
 #LOGO BLANCO
 \*-----------------------------------*/
@@ -183,7 +181,6 @@ h2{
   height: auto;
   margin-left: 20px;
 }
-
 
 /*-----------------------------------*\
 #Menú de navegación
@@ -220,7 +217,6 @@ h2{
   background-color: #620000 !important;
   color: white !important;
 }
-
 
 /*-----------------------------------*\
 #FORMULARIO DE CONTACTO
@@ -270,7 +266,7 @@ h2{
     margin-top: 20px;
 }
 
-::-webkit-input-placeholder { /* Chrome */
+::-webkit-input-placeholder { 
   font-family: 'Roboto', sans-serif;
 }
 
@@ -376,9 +372,6 @@ button:focus , .submit-btn:focus{
       font-size: 3em;
 }
 
-
-
-
 /*-----------------------------------*\
 #FOOTER
 \*-----------------------------------*/
@@ -442,7 +435,6 @@ button:focus , .submit-btn:focus{
   margin-right: 3px;
   margin-bottom: 5px;
   }
-  
   
   /* footer medio*/
   .footer .footer-center {

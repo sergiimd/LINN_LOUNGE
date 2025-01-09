@@ -123,7 +123,6 @@ h2{
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  /* background-color: rgb(14, 14, 14); */
   }
 
   body {
@@ -264,24 +263,20 @@ h2{
   margin: 0;
 }
 
-/* GSAP */
 .image-container {
-  width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+  width: 150px; 
   height: 150px;
 }
 
 .image-container img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Asegura que la imagen no se distorsione */
+  object-fit: contain; 
 }
-
-/* COSMOPOLITAN DESCRIPCIÓN */
 
 #descripcion {
   width: 100%;
 }
-
 
 .border-container {
   width: 100%;
@@ -339,13 +334,11 @@ h2{
   width: 100%; 
 }
 
-/* Efecto al hacer hover */
 .zoom-img:hover {
   transform: scale(1.1); 
 }
 
 /*CARDS */
-
 .my-5 {
   margin-top: 6rem !important;
 }
@@ -392,7 +385,6 @@ h2{
   font-family: "Passion One", serif;
 }
 
-
 /*TEXTO ANIMADO */
 .running-line-wrapper {
   margin-bottom: 4em;
@@ -414,7 +406,6 @@ span {
   font-family: "Passion One", serif;
 }
 
-
 @keyframes run {
   0% {
     transform: translateX(0); 
@@ -424,9 +415,7 @@ span {
   }
 }
 
-
 /* RECETA */
-
 #biografia {
   margin-bottom: 8em;
 }
@@ -481,20 +470,17 @@ span {
   text-align: center;
 }
 
-/* Estilos para asegurar que el texto sea responsive */
 @media (max-width: 768px) {
   .cosmopolitan-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px; /* Espacio entre la imagen y el separador */
+    margin-bottom: 50px; 
     position: relative;
-    top: 20px; /* Ajusta la posición del separador por debajo de la imagen */
+    top: 20px; 
     margin-top: 20px; 
   }
   
-
-
   }
   .text-white {
     max-width: 100%; 
@@ -506,22 +492,21 @@ span {
 
   .cosmopolitan-recipe ol {
     margin-right: 1em;
-    font-size: 0.75rem; /* Reducir el tamaño del texto */
+    font-size: 0.75rem; 
   }
 
   .cosmopolitan-recipe p {
     font-size: 1rem;
   }
   .bg-light2 img {
-    max-width: 100%;  /* La imagen ocupará el 100% del contenedor */
+    max-width: 100%;  
     height: auto;
   }
-  /* Aseguramos que el texto aparezca debajo de la imagen en móviles */
+  
   .container-fluid2 {
     flex-direction: column;
     justify-content: center;
   }
-
 
 @media (max-width: 480px) {
 
@@ -531,7 +516,7 @@ span {
   }
 
   .bio-bg2 h2 {
-    font-size: 3rem; /* Más pequeño en dispositivos aún más pequeños */
+    font-size: 3rem; 
   }
 
   .cosmopolitan-recipe h3 {
@@ -539,7 +524,7 @@ span {
   }
 
   .bg-light2 img {
-    max-width: 100%;  /* La imagen ocupará el 100% del contenedor */
+    max-width: 100%; 
     height: auto;
   }
 }
@@ -584,7 +569,6 @@ span {
   font-size: 6vw; 
 }
 
-
 .bg-light {
   background-color: rgb(21, 21, 21) !important;
 }
@@ -604,7 +588,6 @@ span {
   }
 }
 
-
 @media (max-width: 767px) {
   .FRASE1 {
     font-size: 8vw; 
@@ -615,13 +598,11 @@ span {
 }
 }
 
-/* Media query para tabletas o pantallas más grandes que móviles pero más pequeñas que desktop */
 @media (min-width: 768px) and (max-width: 1024px) {
   .FRASE1 {
     font-size: 5vw; 
   }
 }
-
 
 /*-----------------------------------*\
 #FOOTER
@@ -686,7 +667,6 @@ span {
   margin-right: 3px;
   margin-bottom: 5px;
   }
-  
   
   /* footer medio*/
   .footer .footer-center {
@@ -843,7 +823,6 @@ margin-right: 0.1em;
 .py-5 {
   padding-top: 0rem !important;
 }
-
 }
 
   /* Ajustes para tablet (menos de 980px de ancho) */
@@ -874,31 +853,28 @@ margin-right: 0.1em;
 
 
 .cosmopolitan {
-  flex-direction: column; /* Cambia la dirección del flex a columna */
-  justify-content: flex-start; /* Alinea todo al inicio */
-  align-items: center; /* Centra los elementos en el eje horizontal */
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center; 
 }
 
 .cosmopolitan-container {
   text-align: center;
-  margin-bottom: 20px; /* Espacio entre el texto y el separador */
+  margin-bottom: 20px; 
   position: relative;
   margin-top: 7em;
 }
 
-/* Posición del separador por debajo */
 .image-container {
-  width: 20%; /* Ajusta el tamaño de la imagen al 80% del ancho */
-  height: auto; /* Mantiene la altura proporcional */
-  margin-top: 20px; /* Añade espacio entre el texto y la imagen del separador */
-  margin-bottom: 20px; /* Añade espacio debajo del separador */
+  width: 20%; 
+  height: auto; 
+  margin-top: 20px; 
+  margin-bottom: 20px; 
 }
-
 
 .cosmopolitan-container h2 {
   font-size: 2em;
 }
-
 
 .btn {
 font-size: 1em;
@@ -933,24 +909,23 @@ margin-right: 0.1em;
 }
 
 .cosmopolitan {
-  flex-direction: column; /* Cambia la dirección del flex a columna */
-  justify-content: flex-start; /* Alinea todo al inicio */
-  align-items: center; /* Centra los elementos en el eje horizontal */
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center; 
 }
 
 .cosmopolitan-container {
   text-align: center;
-  margin-bottom: 20px; /* Espacio entre el texto y el separador */
+  margin-bottom: 20px; 
   position: relative;
   margin-top: 10em;
 }
 
-/* Posición del separador por debajo */
 .image-container {
-  width: 20%; /* Ajusta el tamaño de la imagen al 80% del ancho */
-  height: auto; /* Mantiene la altura proporcional */
-  margin-top: 20px; /* Añade espacio entre el texto y la imagen del separador */
-  margin-bottom: 20px; /* Añade espacio debajo del separador */
+  width: 20%; 
+  height: auto; 
+  margin-top: 20px; 
+  margin-bottom: 20px; 
 }
 
 .btn {
