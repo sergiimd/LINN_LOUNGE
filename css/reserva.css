@@ -208,7 +208,7 @@ h2{
  }
  
 .unete-bg {
-  background-color: #cc0000 !important;
+  background-color: #ec1c24 !important;
   color: white !important;
   border: none;
 }
@@ -217,6 +217,9 @@ h2{
   background-color: #620000 !important;
   color: white !important;
 }
+
+
+
 
 /*-----------------------------------*\
 #FORMULARIO DE CONTACTO
@@ -355,7 +358,7 @@ button, .submit-btn {
 }
 button:hover, .submit-btn:hover,
 button:focus , .submit-btn:focus{
-  background: #ec1c24;
+  color: #ec1c24;
   outline: 0;
   color: #eee;
 }
@@ -363,13 +366,17 @@ button:focus , .submit-btn:focus{
   color: #ec1c24;
 }
 
-.form-headline{
+.form-headline2{
       font-family: "Passion One", serif;
       color: #ffffff;
       z-index: 10;
       font-weight: 700;
       line-height: 0.8;
       font-size: 3em;
+}
+#animatedText {
+  opacity: 0;
+  transform: translateY(50px); 
 }
 
 /*-----------------------------------*\

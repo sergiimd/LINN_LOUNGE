@@ -212,3 +212,33 @@ function reset() {
   messageEl = "";
   document.querySelector(".name-error").innerText = "";
 }
+
+
+window.addEventListener('load', function() {
+  
+  gsap.to("#animatedText", {
+    duration: 2,              
+    opacity: 1,               
+    y: 0,                      
+    color: "#ec1c24",          
+    ease: "power2.out",       
+  });
+});
+
+window.addEventListener('load', function() {
+  gsap.utils.toArray(".zoom-img").forEach((img) => {
+    gsap.to(img, {
+      scrollTrigger: {
+        trigger: img,  
+        start: "top 80%", 
+        end: "top 40%",   
+        scrub: true,      
+        markers: false    
+      },
+      opacity: 1,           
+      y: 0,                  
+      duration: 1,          
+      ease: "power2.out"    
+    });
+  });
+});

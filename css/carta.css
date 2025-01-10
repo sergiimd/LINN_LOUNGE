@@ -349,27 +349,36 @@ h2{
 .my-5 {
   margin-top: 6rem !important;
 }
+
 .container-fluid {
-  width:100%;
+  width: 100%;
 }
-.card-img {
+
+.card-img-top {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  border: none; 
+  object-fit: cover;
+  border: none;
 }
 
 .card-img-overlay {
   position: absolute;
   bottom: 0;
   width: 100%;
-  text-align: center; 
+  text-align: center;
   border-radius: none;
 }
 
 .card-title {
   font-family: "Passion One", serif;
   font-size: 3em;
+}
+
+
+.zoom-img {
+  opacity: 0;
+  transform: translateY(50px); 
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 /*TEXTO MOTIVADOR */
@@ -460,7 +469,7 @@ span {
   font-size: 3em;
 }
 
-/* Fondo de la imagen */
+
 .bg-light2 {
 
   padding-top: 8%;
@@ -575,6 +584,8 @@ span {
 
 .FRASE1 {
   font-size: 6vw; 
+  font-family: "Passion One", serif;
+
 }
 
 .bg-light {
@@ -922,6 +933,7 @@ margin-right: 0.1em;
   flex-direction: column; 
   justify-content: flex-start; 
   align-items: center; 
+  margin-right: 0px;
 }
 
 .cosmopolitan-container {
